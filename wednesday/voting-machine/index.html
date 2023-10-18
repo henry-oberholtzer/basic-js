@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/scripts.js"></script>
+    <title>Voting Information</title>
+</head>
+<body>
+    <h1>Voting Information</h1>
+    <form>
+        <label for="ageInput" >Please Confirm Your Age:</label>
+        <input type="number" id="ageInput" min="0" max="400">
+        <button type="submit">Validate</button>
+    </form>
+
+    <div id="over18" class="hidden">
+        <h2>You Can Vote</h2>
+        <p>It's Ok I Guess</p>
+    </div>
+    <div id="under18" class="hidden">
+        <h2>Hey! You Cannot Vote</h2>
+        <p><a href="https://fortnite.com">Here's Something More Your Speed</a></p>
+    </div>
+</body>
+</html>
