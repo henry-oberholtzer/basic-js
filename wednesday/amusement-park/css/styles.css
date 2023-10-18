@@ -1,0 +1,11 @@
+.hidden {
+    display: none;
+}
+
+#error-message {
+    font-weight: 600;
+    color: black;
+    background-color: yellow;
+    width: auto;
+    margin: 5%;
+}
