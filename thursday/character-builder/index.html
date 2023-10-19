@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/scripts.js"></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Character Builder</title>
+</head>
+
+<body>
+    <div class="block">
+        <h1>Character Builder</h1>
+        <form class="character-input">
+            <select id="species">
+                <option value="">Select</option>
+                <option value="5">Human</option>
+                <option value="7">Wolf-Thing</option>
+                <option value="8">Swamp-Thing</option>
+                <option value="9">Bug-Thing</option>
+                <option value="6">Eel-Thing</option>
+                <option value="3">Undead</option>
+            </select>
+            <select id="weapon-choice">
+                <option value="">Select</option>
+                <option value="5">Torch</option>
+                <option value="9">Darts</option>
+                <option value="7">Rocks</option>
+                <option value="4">Vines</option>
+            </select>
+            <select id="armor">
+                <option value="">Select</option>
+                <option value="7">Leather</option>
+                <option value="6">Wetsuit</option>
+                <option value="2">Lead</option>
+                <option value="3">Burlap Sack</option>
+                <option value="0">None</option>
+            </select>
+            <label> Gender?:
+                <input type="text" placeholder="Tell us...">
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="block">
+        <h2>Information:</h2>
+
+        <div class="output">
+            Strength: <p id="species_armor_weapon_strength"></p>
+            Attack: <p id="species_weapon_attack"></p>
+            Defense: <p id="species_armor_defense"></p>
+            Charisma: <p id="armor_gender_charisma"></p>
+        </div>
+    </div>
+</body>
+
+</html>
