@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/scripts.js"></script>
+    <script src="js/bootstrap.js"></script>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <title>Character Builder</title>
 </head>
 
 <body>
     <div class="block">
         <h1>Character Builder</h1>
-        <form class="character-input">
+        <form id="character-input">
+            <label for="species">Species</label>
             <select id="species">
                 <option value="">Select</option>
                 <option value="5">Human</option>
@@ -22,6 +25,7 @@
                 <option value="6">Eel-Thing</option>
                 <option value="3">Undead</option>
             </select>
+            <label for="weapon-choice">Weapon</label>
             <select id="weapon-choice">
                 <option value="">Select</option>
                 <option value="5">Torch</option>
@@ -29,6 +33,7 @@
                 <option value="7">Rocks</option>
                 <option value="4">Vines</option>
             </select>
+            <label for="armor">Armor</label>
             <select id="armor">
                 <option value="">Select</option>
                 <option value="7">Leather</option>
@@ -37,9 +42,8 @@
                 <option value="3">Burlap Sack</option>
                 <option value="0">None</option>
             </select>
-            <label> Gender?:
-                <input type="text" placeholder="Tell us...">
-            </label>
+            <label for="gender">Gender?:</label>
+            <input id="gender" type="text" placeholder="Tell us...">
             <button type="submit">Submit</button>
         </form>
     </div>
