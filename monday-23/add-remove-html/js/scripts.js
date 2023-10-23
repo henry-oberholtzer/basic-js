@@ -34,6 +34,6 @@ window.addEventListener("load", (event) => {
     body.append(aEle);
     aEle.setAttribute("href", "https://en.wikipedia.org/wiki/Multicoloured_tanager");
     aEle.append("Wikiepedia");
-    
+
 
 });
